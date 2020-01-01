@@ -1,5 +1,5 @@
 #install pyftpdlib library module and pip before start\
-#apt install pip && apt install pip3
+#apt install python-pip or apt install python3-pip
 #pip install ftpdlib
 
 from pyftpdlib.authorizers import DummyAuthorizer
@@ -7,7 +7,7 @@ from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
 
 authorizer = DummyAuthorizer()
-authorizer.add_user("mawan", "nevtik", "/home/username", perm="elradfmw") #You can use permission as you wish
+authorizer.add_user("mawan", "nevtik", "/home/username", perm="elradfmw") #change permission and directory as you wish
 authorizer.add_user("github", "12345", "/home/username", perm="elradfmw")
 authorizer.add_anonymous("/home/username", perm="elradfmw") #For anonymous (Guest) user
 
