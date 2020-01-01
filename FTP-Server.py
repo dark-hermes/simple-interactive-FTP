@@ -1,4 +1,5 @@
-#install pyftpdlib library module before start
+#install pyftpdlib library module and pip before start\
+#apt install pip && apt install pip3
 #pip install ftpdlib
 
 from pyftpdlib.authorizers import DummyAuthorizer
