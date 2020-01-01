@@ -14,6 +14,6 @@ authorizer.add_anonymous("/home/username", perm="elradfmw") #For anonymous (Gues
 handler = FTPHandler
 handler.authorizer = authorizer
 
-host, port = input("Input Host : "),int(input("Input Port[21] :")
+host, port = input("Input Host : "),int(input("Input Port[21] :"))
 server = FTPServer(('host','port'), handler) 
 server.serve_forever()
