@@ -1,7 +1,7 @@
 from ftplib import FTP
 
 ftp = FTP('')
-host, port = input("Input Server Host : "), int(input("Input Server Port[21] : ")
+host, port = input("Input Server Host : "), int(input("Input Server Port[21] : "))
 ftp.connect('host','port')
 ftp.login()
 
