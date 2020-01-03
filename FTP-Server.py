@@ -8,7 +8,7 @@ from pyftpdlib.servers import FTPServer
 authorizer = DummyAuthorizer()
 authorizer.add_user("mawan13", "130504", "Server", perm="elradfmw") #Change "Server" with your directory
 authorizer.add_user("github","12345", "Server", perm="elradfmw") #You can change user permission as you wish
-authorizer.add_anonymous("/home/username", perm="elradfmw") #For anonymous (Guest) user
+authorizer.add_anonymous("Guest", perm="elradfmw") #For anonymous (Guest) user 
 
 handler = FTPHandler
 handler.authorizer = authorizer
